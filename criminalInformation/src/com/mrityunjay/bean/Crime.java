@@ -1,5 +1,7 @@
 package com.mrityunjay.bean;
 
+
+
 public class Crime {
 	
 	
@@ -9,13 +11,13 @@ public class Crime {
 	private String victims;
 	private String detailDescription;
 	private String suspect;
-	
+	private String solved;
 
 	public Crime() {
 		super();
 	}
 	public Crime(String date, String place, String description, String victims, String detailDescription,
-			String suspect) {
+			String suspect, String solved) {
 		super();
 		this.date = date;
 		this.place = place;
@@ -23,6 +25,7 @@ public class Crime {
 		this.victims = victims;
 		this.detailDescription = detailDescription;
 		this.suspect = suspect;
+		this.solved = solved;
 	}
 	
 	public String getDate() {
@@ -46,10 +49,11 @@ public class Crime {
 	public String getVictims() {
 		return victims;
 	}
+	
 	@Override
 	public String toString() {
 		return "Crime [date=" + date + ", place=" + place + ", description=" + description + ", victims=" + victims
-				+ ", detailDescription=" + detailDescription + ", suspect=" + suspect + "]";
+				+ ", detailDescription=" + detailDescription + ", suspect=" + suspect + ", solved=" + solved + "]";
 	}
 	public void setVictims(String victims) {
 		this.victims = victims;
@@ -65,6 +69,12 @@ public class Crime {
 	}
 	public void setSuspect(String suspect) {
 		this.suspect = suspect;
+	}
+	public String getSolved() {
+		return solved;
+	}
+	public void setSolved(String solved) {
+		this.solved = solved;
 	}
 	
 	
